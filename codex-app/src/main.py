@@ -4,9 +4,9 @@ from crawl4ai import AsyncWebCrawler, BrowserConfig, CrawlerRunConfig
 async def main():
     async with AsyncWebCrawler() as crawler:
         result = await crawler.arun(
-            url="https://docs.n8n.io",
+            url="https://docs.spring.io",
         )
-        print(result.markdown[:300])  # Show the first 300 characters of extracted text
+        print(result.markdown)
 
 if __name__ == "__main__":
     asyncio.run(main())
